@@ -1,0 +1,46 @@
+.navbar{
+    display: grid;
+    grid-template-columns: 10vw auto;
+    background-color: white;
+    height: 10vh;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    position: sticky;
+    top: 0;
+}
+
+.navbar .logo{
+    padding: 3vh;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2vh;
+    color: #153463;
+}
+ .links{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0 1.5vw 0 1.5vw;
+    align-items: center;
+    
+}
+
+.links a {
+    text-decoration: none;
+ 
+}
+
+.links p {
+    padding: 3vh;
+    color: #153463;
+    font-weight: 500;
+    font-size: 1.5vh;
+}
+
+@media (max-width: 764px) {
+    .links {
+        opacity: 0;
+    }
+}
+
+
