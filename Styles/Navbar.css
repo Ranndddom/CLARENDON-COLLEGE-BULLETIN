@@ -13,7 +13,7 @@
 .navbar .logo{
     padding: 3vh;
     align-items: center;
-    font-weight: 700;
+    font-weight: bold;
     font-size: 2vh;
     color: #153463;
 }
@@ -37,10 +37,9 @@
     font-size: 1.5vh;
 }
 
-@media (max-width: 764px) {
+@media (max-width: 768px) {
     .links {
         opacity: 0;
     }
 }
-
 
