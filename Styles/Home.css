@@ -7,7 +7,7 @@
    height: 100vh; /* Ensure the sidebar spans the full viewport height */
    width: 30vw; /* Adjust the sidebar width */
    background-color: #f8f9fa; /* Sidebar background color */
-   margin-top: 13vh;
+   margin-top: 12vh;
    z-index: 3;
    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);
 
@@ -25,7 +25,7 @@
 
 .post{
    font-size: 1.5rem;
-   margin-top: 4.5vh;
+   margin-top: 3.5vh;
    margin-bottom: 10px;
    font-weight: 600;
    color:  #153463;
@@ -64,7 +64,7 @@
    margin-left: 28px;
    padding-bottom: 10px;
    font-size: 1.3rem;
-   font-weight: 600;
+   font-weight: 530;
    color:  #153463 ;
    
 }
@@ -73,7 +73,7 @@
    margin-left: 30px;
    margin-right: 30px;
    text-align: justify;
-   font-size: 1.2rem;
+   font-size: 1.1rem;
    padding-bottom: 20px;
    
 }
@@ -95,7 +95,7 @@ hr {
 
 .month{
    font-size: 1.5rem;
-   padding-left: 20px;
+   padding-left: 16px;
    padding-top: 3vh;
    padding-bottom: 1vh;
    font-weight: bold;
@@ -201,9 +201,7 @@ hr {
 
       }
 
-      .month{
-         padding-left: 20px;
-      }
+     
 
 
 
