@@ -1,15 +1,18 @@
-.navbar{
-    display: grid;
-    grid-template-columns: 10vw auto;
-    background-color: white;
-    height: 10vh;
-    width: 100%;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-    z-index: 2;
-    position: sticky;
+.navbar {
+    position: fixed; /* Keep the navbar at the top */
     top: 0;
-}
-
+    left: 0;
+    width: 100%; /* Make it span the full width */
+    height: 10vh; /* Adjust height as needed */
+    background-color: white; /* Navbar background color */
+    color: white; /* Text color */
+    display: grid; /* Use flexbox for layout */
+    grid-template-columns: 10vw auto;
+    align-items: center; /* Center items vertically */
+    z-index: 10; /* Ensure it stays on top of other elements */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+ }
+ 
 .navbar .logo{
     padding: 3vh;
     align-items: center;
@@ -42,4 +45,5 @@
         opacity: 0;
     }
 }
+
 
