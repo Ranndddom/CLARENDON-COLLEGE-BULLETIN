@@ -11,11 +11,12 @@
 <body>
     <div class="navbar">
       <p class="logo">Clarendon Bulletin</p>
-      <div class="links">
-        <a href="#"><p>About</p></a> 
-        <a href="#"><p>Calendar</p></a> 
-        <a href="#"><p>Home</p></a> 
+      <div class="links" id="menuList">
+        <a href="/Pages/about.html"><p>About</p></a> 
+        <a href="/Pages/calendar.html"><p>Calendar</p></a> 
+        <a href="/index.html"><p>Home</p></a> 
       </div>
+      <button id="menuButton">&#9776</button> <!-- Hamburger button on the right -->
     </div>
 
     <div class="content">
@@ -100,9 +101,10 @@
         
       <div class="feed">
 
-        <p class="post">Updates</p><hr>
+       
 
         <div class="post-container">
+          <p class="post">Updates</p><hr>
 
           <div class="post-item">
             <p class="account">Clarendon Family</p>
@@ -156,6 +158,16 @@
       </div> 
 
     </div>
+    <script>
+      // Get the menu button and the menu list
+     const menuButton = document.getElementById('menuButton');
+        const menuList = document.getElementById('menuList');
+
+        // Toggle the menu when the button is clicked
+        menuButton.addEventListener('click', function() {
+            menuList.classList.toggle('active');
+        });
+    </script>
 
 </body>
 </html>
