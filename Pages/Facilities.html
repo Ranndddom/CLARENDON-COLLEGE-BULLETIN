@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facilities | Clarendon College</title>
+    <link rel="website icon" href="/Pictures/Logo.png">
+    <link rel="stylesheet" href="/Styles/Styles.css">
+    <link rel="stylesheet" href="/Styles/Navbar.css">
+    <link rel="stylesheet" href="/Styles/Home.css">
+</head>
+<body>
+    <div class="navbar">
+      <img class="logo" src="/Pictures/Logo1.png" alt="">
+      <div class="links" id="menuList">
+        <a href="/Pages/calendar.html"><p>Calendar</p></a> 
+        <a href="/Pages/Bulletin.html"><p>Bulletin</p></a> 
+        <a href="/Pages/Facilities.html"><p><b>Facilities</b></p></a> 
+        <a href="/Pages/about.html"><p>About</p></a> 
+        <a href="/index.html"><p>Home</p></a> 
+      </div>
+      <button id="menuButton">&#9776</button> <!-- Hamburger button on the right -->
+    </div>
+
+    
+    <script>
+      // Get the menu button and the menu list
+    const menuButton = document.getElementById('menuButton');
+        const menuList = document.getElementById('menuList');
+
+        // Toggle the menu when the button is clicked
+        menuButton.addEventListener('click', function() {
+            menuList.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
