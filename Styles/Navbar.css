@@ -7,7 +7,7 @@
     background-color: white; /* Navbar background color */
     color: white; /* Text color */
     display: grid; /* Use flexbox for layout */
-    grid-template-columns: 30vw auto;
+    grid-template-columns: 20vw auto;
     align-items: center; /* Center items vertically */
     z-index: 10; /* Ensure it stays on top of other elements */
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
@@ -43,6 +43,7 @@
     font-weight: 500;
     font-size: 13px;
     margin: 0 0.5vw 0 0.5vw;
+    cursor: pointer;
     }
 
     #menuButton {
@@ -63,8 +64,7 @@
 
 
     /* Styles for mobile view (small screens) */
-    @media screen and (max-width: 768px) {
-
+    @media (max-width: 900px) {
 
 
 
@@ -82,15 +82,11 @@
     background-color: white;
     flex-direction: column;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-
-
     }
 
     .links.active {
     display: block; /* Show the menu when the active class is added */
     }
-
-    
 
     }
 
@@ -100,7 +96,6 @@
     left: 85vw;
 
     }
-
 
     }
 
