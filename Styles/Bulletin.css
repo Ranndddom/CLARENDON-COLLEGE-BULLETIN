@@ -11,7 +11,7 @@
    height: 100vh; /* Ensure the sidebar spans the full viewport height */
    width: 30vw; /* Adjust the sidebar width */
    background-color: #f8f9fa; /* Sidebar background color */
-   margin-top: 12vh;
+   margin-top: 2vh;
    z-index: 3;
    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);
 
@@ -23,7 +23,6 @@
    background-color: #f8f8f8; 
    width: 100vw;
    z-index: -2;
-   margin-top: 10vh;
 }
 
 .post{

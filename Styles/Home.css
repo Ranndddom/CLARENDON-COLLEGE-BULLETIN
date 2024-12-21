@@ -1,31 +1,32 @@
 .Content {
-    margin-top: 10vh;
 }
 
 .quote-container {
     background-image: url('/Pictures/homeCoverPhoto.png');
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     justify-content: center;
-    background-color: red;
     background-position: center;
+    box-shadow: 0 30px 40px rgba(0, 0, 0, 0.3);
+    z-index: 1;
 }
 
 
 .quote {
     position: absolute;
-    top: 40vh;
+    top: 45vh;
     margin: 0 auto;
     text-align: center;
-    margin-left: 10vw;
+    margin-left: 12vw;
+    z-index: 2;
 }
 
 .quote p{
     color: white;
-    font-size: 4rem;
+    font-size: 3rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal, vertical, blur-radius, color */
     text-align: center;
     
@@ -39,12 +40,56 @@
     font-weight: bold;
     display: inline-block;
     font-size: 1rem;
-    margin-top: 2vh;
+    margin-top: 1.5vh;
     cursor: pointer;
     
 
 }
 
+.learnMore {
+    width: 100vw;
+    height: 90vh;
+    background-size: cover;
+    background-image: url('/Pictures/ClarendonPicture.png');
+    position: relative;
+    z-index: -1;
+
+}
+
+.learnMoreContainer{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    height: 85vh;
+    width: 30vw;
+    left: 67.8vw;
+    top: 2.5vh;
+    box-shadow: 0 0 30px 30px rgba(255, 255, 255, 0.9); /* White fog effect */
+    align-content: center;
+
+}
+
+.welcome {
+    color: #153463;
+    font-size: 1.8rem;
+    font-weight: 580;
+    margin-bottom: 4vh;
+}
+
+.welcomeText {
+    font-size: 1.3rem;
+    margin-bottom: 4vh;
+
+
+}
+
+#learnMore {
+    border: none;
+    background-color: #153463;
+    color: white;
+    font-size: 1.1rem;
+    padding: 2vh 5vw 2vh 5vw;
+
+}
 
 @media (max-width: 768px) {
     .Content{
@@ -52,24 +97,86 @@
         flex-direction: column;
     }
     .quote-container {
-        height: 510px;
+        height: 35vh;
+
     }
     .quote{
         position: static;
         background-color: #153463;
         width: 100vw;
         margin-left: 0;
-        padding-bottom: 5vw;
-        padding-top: 5vw;
+        padding-bottom: 10vw;
+        padding-top: 10vw;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     }
     .quote p {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         font-weight: 500;
+        margin-bottom: 2vh;
     }
     .contactUs {
-        padding: 2.5vw;
+        padding: 2vh 5vw 2vh 5vw;
         border: 1px solid white;
+        margin-top: 3vh;
+        font-size: 0.9rem;
+        
         
     
     }
+}
+
+@media (max-width: 600px) {
+
+    .learnMore {
+        padding-bottom: 1vh;
+        
+    }
+    .learnMoreContainer {
+        height: auto;
+        width: 60vw;
+        left: 20vw;
+        top: 20vh;
+        box-shadow: 0 0 30px 30px rgba(255, 255, 255, 0.9); /* White fog effect */
+        align-content: center;
+        text-align: center;
+    }
+
+    
+
+}
+
+@media (max-width: 320px) {
+
+    .learnMore {
+        background-image: none;
+    }
+    .learnMoreContainer {
+        left: 5vw;
+        top: 5vh;
+        width: 90vw;
+        
+    }
+
+    .welcome {
+        font-size: 1.3rem;
+        text-align: left;
+    }
+    
+    .welcomeText {
+        font-size: 1rem;
+        text-align: justify;
+    }
+    
+    #learnMore {
+        font-size: 0.9rem;
+    
+    }
+
+    #learnMore  {
+        width: 91vw;
+    }
+
+   
+
+
 }

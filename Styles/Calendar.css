@@ -7,8 +7,8 @@ position: fixed; /* Keep the sidebar in a fixed position */
 height: 100vh; /* Ensure the sidebar spans the full viewport height */
 width: 30vw; /* Adjust the sidebar width */
 background-color: #f8f9fa; /* Sidebar background color */
-margin-top: 12vh;
 z-index: 3;
+margin-top: 2vh;
 box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);
 
 
